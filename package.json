@@ -1,0 +1,19 @@
+{
+  "name": "aspnet-mvc-loves-react",
+  "version": "1.0.0",
+  "description": "Single page web application. Full React Implementation (React + React Router) with backend powered by ASP.NET MVC Web API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fauzanazhiman/aspnet-mvc-loves-react.git"
+  },
+  "author": "Fauzan Azhiman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fauzanazhiman/aspnet-mvc-loves-react/issues"
+  },
+  "homepage": "https://github.com/fauzanazhiman/aspnet-mvc-loves-react#readme"
+}
