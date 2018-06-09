@@ -1,7 +1,6 @@
 /*!
- * Brixcube Community SDK v1.0
+ * ASP.NET MVC Loves React Webpack Configuration
  * Coded by Fauzan Azhiman
- * using Node.js, React + Redux
  */
 'use strict';
 
@@ -11,7 +10,7 @@ module.exports = function (release) {
   return {
 	context: __dirname,
     output: {
-      path: __dirname + '/src-php/public/js/',
+      path: __dirname + '/public/html/js/',
       filename: '[name].js'
     },
     cache: !release,
@@ -34,15 +33,8 @@ module.exports = function (release) {
         'react-datetime',
         'react-tinymce'
       ],
-      //builder application      
-      './builder': './src-js/builder/App.jsx',
-      
-      //client core application
-      './client': './src-js/client/App.jsx',
-      './client_loader': './src-js/client/_loader.js',
-
-      //installer application
-      './installer': './src-js/installer/App.jsx'
+	  
+	  './bundle': './src/App.jsx',
     },
 
     stats: {

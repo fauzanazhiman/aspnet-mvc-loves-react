@@ -2,3 +2,6 @@
 /packages
 /Website/bin
 /Website/obj
+node_modules/
+public/bin/
+public/obj/

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AspNetMvc_ReactRouter_StarterSite.Controllers
+namespace Website.Controllers
 {
     public class HomeController : Controller
     {

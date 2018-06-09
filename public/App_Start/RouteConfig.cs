@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace AspNetMvc_ReactRouter_StarterSite
+namespace Website
 {
     public class RouteConfig
     {
@@ -14,9 +14,21 @@ namespace AspNetMvc_ReactRouter_StarterSite
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "Api",
+                url: "api/v1/{action}/{id}",
+                defaults: new { controller = "ApiV1", action = "Default", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Error",
+                url: "errorpage/{action}",
+                defaults: new { controller = "Error", action = "NotFound"}
+            );
+
+            routes.MapRoute(
+                name: "ClientRoute",
+                url: "{*ClientRoute}",
+                defaults: new { controller = "Home", action = "Index"}
             );
         }
     }
