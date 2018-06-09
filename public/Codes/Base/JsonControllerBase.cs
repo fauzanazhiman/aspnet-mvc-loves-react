@@ -25,7 +25,7 @@ namespace Website.Codes.Base
         {
             Exception ex = filterContext.Exception;
             filterContext.ExceptionHandled = true;
-            LoggerUtils.GetLogger().Error("API call throw exception. URL: " + Request.RawUrl, filterContext.Exception);
+            LoggerUtils.GetLogger().Error("API call throw exception. URL: " + Request.RawUrl);
             filterContext.Result = new JsonResult
             {
                 Data = new ApiResponse
