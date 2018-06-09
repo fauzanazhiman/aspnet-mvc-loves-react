@@ -16,24 +16,6 @@ module.exports = function (release) {
     cache: !release,
     devtool: false,
     entry: {
-      'vendor': [
-        'react', 
-        'react-dom', 
-        'redux', 
-        'react-redux',
-        'react-router',  
-        'react-router-dom',  
-        'superagent', 
-        'react-dropzone', 
-        'sweetalert2', 
-        'react-helmet',
-        'sprout-data',
-        'fecha',
-        'moment',
-        'react-datetime',
-        'react-tinymce'
-      ],
-	  
 	  './bundle': './src/App.jsx',
     },
 
@@ -46,10 +28,8 @@ module.exports = function (release) {
       new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
       new webpack.optimize.UglifyJsPlugin({minimize: true}),
       new webpack.optimize.ModuleConcatenationPlugin(),
-      new webpack.optimize.CommonsChunkPlugin({ name: "vendor", filename: "./vendor.js" }),
     ] : [
       new webpack.HotModuleReplacementPlugin(),
-      new webpack.optimize.CommonsChunkPlugin({ name: "vendor", filename: "./vendor.js" })
     ],
 
     resolve: {
